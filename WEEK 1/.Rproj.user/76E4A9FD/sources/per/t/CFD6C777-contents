@@ -1,0 +1,29 @@
+---
+title: "Challenge-1"
+author: "alicia tan"
+date: "2023-08-16"
+output: html_document
+---
+
+```Hi I am Alicia from CNM. I am a Y2 student and I am also second-majoring in Sociology. I look forward to NM2207!
+```
+
+##Picture
+
+```{r, out.height= "800px",out.width= "600px",echo=TRUE,eval=TRUE,fig.cap="Picture"}
+knitr::include_graphics("linkedin.JPG")
+```
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

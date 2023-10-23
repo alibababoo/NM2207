@@ -1,0 +1,10 @@
+---
+title: "Submission- week 9"
+author: "alicia tan"
+date: "2023-10-18"
+output: html_document
+---
+
+1. Topic: The popularity of different Taylor Swift songs.
+2. I will be using this dataset https://www.kaggle.com/datasets/jarredpriester/taylor-swift-spotify-dataset
+(This data tells me about the popularity of Taylor Swift's songs, the release dates, length of the songs, valence of the songs, the album of the respective songs and much more)

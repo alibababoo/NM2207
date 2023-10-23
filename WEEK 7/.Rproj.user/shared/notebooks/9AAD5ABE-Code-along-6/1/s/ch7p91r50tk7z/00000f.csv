@@ -1,0 +1,4 @@
+"0","ggplot(loans, aes(x = loan_amount, fill = homeownership)) + #giving x-axis a frame, filling with a categorical variable"
+"0"," geom_histogram(binwidth = 5000, alpha = 0.5) + #features of the histogram chart"
+"0"," labs(x = ""Loan amount ($)"",y = ""Frequency"",title = ""Amounts of Lending Club loans"") #mapping to the x-axis, y-axis and giving a title to the graph"
+"0",""

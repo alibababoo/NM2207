@@ -1,0 +1,7 @@
+"0","# Right-hand side code: while loop"
+"0","customer_orders %>%"
+"0","filter(price > 100) %>%"
+"0","select(OrderID, CustomerID, ProductID, Quantity, Price)"
+"2","Error in customer_orders %>% filter(price > 100) %>% select(OrderID, CustomerID,  : 
+  could not find function ""%>%""
+"

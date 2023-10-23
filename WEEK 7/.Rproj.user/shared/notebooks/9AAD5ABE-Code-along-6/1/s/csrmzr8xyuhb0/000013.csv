@@ -1,0 +1,2 @@
+"0","ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, color = species)) + #penguins data frame, mapping to the x-axis and y-axis"
+"0"," geom_point() + facet_grid(species ~ sex) + scale_color_viridis_d() #type of graph shown and the colour of the points"

@@ -1,0 +1,6 @@
+"0","# Enter code here"
+"0","comm_data %>% "
+"0","  group_by(sender) %>%"
+"0","  filter(sentiment > 0) %>%"
+"0","  summarise(mean_sentiment = mean(sentiment)) %>%"
+"0","  slice(6,3,4)"

@@ -1,0 +1,3 @@
+"0","ggplot(loans, aes(x = homeownership, #using loans data frame, mapping x-axis"
+"0"," fill = grade)) + #filling with a categorical variable"
+"0"," geom_bar() #type of graph"

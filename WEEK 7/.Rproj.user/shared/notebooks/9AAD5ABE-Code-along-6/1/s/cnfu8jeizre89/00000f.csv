@@ -1,0 +1,3 @@
+"0","ggplot(loans, #Start with the loans_full_schema data frame"
+"0","       aes(x = homeownership, fill = grade)) + # #Map homeownership to x-axis and fill with grade"
+"0","geom_bar(position = ""fill"") #Calculate the proportion by percentage"

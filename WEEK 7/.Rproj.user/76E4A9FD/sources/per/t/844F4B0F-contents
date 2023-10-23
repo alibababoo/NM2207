@@ -1,0 +1,135 @@
+---
+title: "Week-7: Challenge"
+author: "Alicia Tan"
+date: "`4 oct 2023`"
+output:
+  html_document:
+  df_print: paged
+pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, eval=TRUE,echo=TRUE}
+library(tidyverse)
+library(palmerpenguins)
+glimpse(penguins)
+```
+
+
+```{r, eval=TRUE,echo=TRUE}
+library(ggplot2)
+ggplot(data = penguins, #penguins data frame
+ mapping = aes(x = bill_depth_mm, #mapping to the x-axis
+ y = bill_length_mm, #mapping to the y-axis
+ colour = species)) + #Map species to the colour of each point
+ geom_point() +
+ labs(title = "Bill depth and length",  #title of graph
+ subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins") 
+
+```
+<br>
+```{r, eval=TRUE,echo=TRUE}
+ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, colour = species, shape = species,
+ size = body_mass_g)) + #mapping to the x-axis, y-axis, colour, shape and size of the points
+ geom_point() + scale_colour_viridis_d() #type of graph and 
+```
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(penguins, aes(x = bill_depth_mm, y = bill_length_mm, color = species)) + #penguins data frame, mapping to the x-axis and y-axis
+ geom_point() + facet_grid(species ~ sex) + scale_color_viridis_d() #type of graph shown and the colour of the points
+```
+<br>
+
+
+```{r, eval=TRUE,echo=TRUE}
+library(openintro)
+glimpse(loans_full_schema)
+loans <- loans_full_schema %>% #forward pipe operator, expressing loans_full_schema as loans
+ select(loan_amount, interest_rate, term, grade, state, annual_income, homeownership, debt_to_income) #choosing these categories to be shown
+glimpse(loans)
+```
+<br>
+
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = loan_amount, fill = homeownership)) + #giving x-axis a frame, filling with a categorical variable
+ geom_histogram(binwidth = 5000, alpha = 0.5) + #features of the histogram chart
+ labs(x = "Loan amount ($)",y = "Frequency",title = "Amounts of Lending Club loans") #mapping to the x-axis, y-axis and giving a title to the graph
+
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = loan_amount)) + #using data frame loans and mapping x axis
+ geom_density() #type of chart
+```
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = loan_amount)) + #using data frame loans and mapping x axis
+ geom_density(adjust = 2) #adjusting bandwith
+```
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = loan_amount, fill = homeownership)) + #mapping of x-axis and filling with a categorical variable
+ geom_density(adjust = 2, alpha = 0.5) + 
+ labs(x = "Loan amount ($)",y = "Density",title = "Amounts of Lending Club loans", fill = "Homeownership")
+```
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = loan_amount, fill = homeownership)) + geom_histogram(binwidth = 5000) + #using loans data frame, giving x-axis a frame, filling with a categorical variable, type of chart 
+ labs(x = "Loan amount ($)",y = "Frequency",title = "Amounts of Lending Club loans") + #non-numerical variables in the chart
+ facet_wrap(~ homeownership, nrow = 3) #makes a long ribbon of panels into 2d
+```
+
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = interest_rate)) + #giving x-axis a frame 
+ geom_boxplot() + #type of chart
+ labs(x = "Interest rate (%)",y = NULL, #mapping to the x-axis and y-axis
+ title = "Interest rates of Lending Club loans") + #giving a title to the graph
+ theme( axis.ticks.y = element_blank(), axis.text.y = element_blank() ) #customising the non-data components of the graph
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = homeownership, #using loans data frame, mapping x-axis
+ fill = grade)) + #filling with a categorical variable
+ geom_bar() #type of graph
+```
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, #Start with the loans_full_schema data frame
+       aes(x = homeownership, fill = grade)) + # #Map homeownership to x-axis and fill with grade
+geom_bar(position = "fill") #Calculate the proportion by percentage
+```
+
+```{r, eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = homeownership, y = loan_amount)) + #using loans data, mapping x and y axis
+ geom_violin() #type of chart
+```
+<br>
+
+```{r, eval=TRUE,echo=TRUE}
+library(openintro)
+ggplot(loans, aes(x = debt_to_income, y = interest_rate)) + #giving x-axis and y-axis a frame
+ geom_point() #type of graph
+
+```
+<br>
+
+```{r,eval=TRUE,echo=TRUE}
+ggplot(loans, aes(x = debt_to_income, y = interest_rate)) + #mapping of x and y axis
+ geom_hex() #types of graph
+```
+
+```{r, eval=TRUE,echo=TRUE}
+library(ggridges)
+ggplot(loans_full_schema, #Start with the loans_full_scheme data frame
+       aes(x = loan_amount, #Map loan-amount to x-axis
+           y = grade, #Map grade to y-axis
+           fill = grade, #Represent each grade as proportion
+           color = grade)) + #Separate each grade by colour
+geom_density_ridges(alpha = 0.5) #Setting the transparency
+```
+

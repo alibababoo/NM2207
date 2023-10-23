@@ -1,0 +1,4 @@
+"0","library(openintro)"
+"0","ggplot(loans, aes(x = debt_to_income, y = interest_rate)) + #giving x-axis and y-axis a frame"
+"0"," geom_point() #type of graph"
+"0",""

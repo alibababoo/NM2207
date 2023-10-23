@@ -1,0 +1,7 @@
+"0","library(ggridges)"
+"0","ggplot(loans_full_schema, #Start with the loans_full_scheme data frame"
+"0","       aes(x = loan_amount, #Map loan-amount to x-axis"
+"0","           y = grade, #Map grade to y-axis"
+"0","           fill = grade, #Represent each grade as proportion"
+"0","           color = grade)) + #Separate each grade by colour"
+"0","geom_density_ridges(alpha = 0.5) #Setting the transparency"

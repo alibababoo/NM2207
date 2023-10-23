@@ -1,0 +1,29 @@
+---
+title: "Sample"
+author: "alicia tan"
+date: "2023-10-04"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, eval=FALSE,echo=TRUE}
+library(tidyverse)
+library(palmerpenguins)
+glimpse(penguins)
+```
+
+
+```{r}
+library(ggplot2)
+ggplot(data = penguins,
+ mapping = aes(x = bill_depth_mm,
+ y = bill_length_mm,
+ colour = species)) +
+ geom_point() +
+ labs(title = "Bill depth and length",
+subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins")
+
+```

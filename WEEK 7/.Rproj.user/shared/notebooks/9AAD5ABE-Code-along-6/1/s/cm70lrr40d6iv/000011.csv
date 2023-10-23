@@ -1,0 +1,2 @@
+"0","ggplot(loans, aes(x = homeownership, y = loan_amount)) + #using loans data, mapping x and y axis"
+"0"," geom_violin() #type of chart"

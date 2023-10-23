@@ -1,0 +1,8 @@
+"0","# Enter code here"
+"0","temperatures <- c(90,40,60,80,100,120,240,260)"
+"0","hot_days <- temperatures > 90"
+"0","total_hot_days <- sum(hot_days)"
+"0","cat(""Total number of hot days:"", total_hot_days)"
+"1","Total number of hot days:"
+"1"," "
+"1","4"
