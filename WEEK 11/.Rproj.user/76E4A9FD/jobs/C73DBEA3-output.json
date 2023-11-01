@@ -1,0 +1,4 @@
+[2,"\n"]
+[1,"\u001B[31m\n\nprocessing file: week-11-challenge.rmarkdown\n\u001B[39m"]
+[1,"\r  |                                                                            \r  |                                                                      |   0%\r  |                                                                            \r  |....                                                                  |   6%\n  ordinary text without R code\n\n\r  |                                                                            \r  |........                                                              |  12%\nlabel: setup (with options) \nList of 1\n $ include: logi FALSE\n\n"]
+[1,"\u001B[31mQuitting from lines 15-20 (week-11-challenge.rmarkdown) \n\u001B[39m\n\u001B[31mError in GET(historic_state_data_url) : could not find function \"GET\"\nCalls: .main ... withVisible -> eval_with_user_handlers -> eval -> eval\n\u001B[39m\u001B[31mExecution halted\n\u001B[39m"]

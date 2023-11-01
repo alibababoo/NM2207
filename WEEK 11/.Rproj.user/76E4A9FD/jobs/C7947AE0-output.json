@@ -1,0 +1,2 @@
+[2,"\n"]
+[1,"\u001B[31mError: The name of the input file cannot contain the special shell characters: [ <>()|\\:&;#?*'] (attempted to copy to a version without those characters 'Week-11-challenge-submission.rmarkdown' however that file already exists)\n\u001B[39m\u001B[31mExecution halted\n\u001B[39m"]

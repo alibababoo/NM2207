@@ -1,0 +1,64 @@
+---
+title: "WEEK 11 SUBMISSIONS"
+author: "alicia tan"
+date: "2023-10-30"
+output: html_document
+---
+WEEK 9:
+1. Topic: The popularity of different Taylor Swift songs.
+
+2. I will be using this dataset https://www.kaggle.com/datasets/jarredpriester/taylor-swift-spotify-dataset
+(This data tells me about the popularity of Taylor Swift's songs, the release dates, length of the songs, valence of the songs, the album of the respective songs and much more)
+
+
+WEEK 10:
+
+1. Why are Taylor Swift's songs so popular?
+
+2. This is an important question as:
+   a. Taylor Swift is one of the most popular contemporary singer today. In 2019, she has already made history as the most awarded artist of all time at American Music Awards, beating Michael Jackson's record of 24 all-time wins. She definetely also has a myriad of other awards under her belt at just 33 years old. (Information from:https://ew.com/awards/2019/11/24/taylor-swift-beats-michael-jackson-american-music-awards-history/)
+   b. Taylor Swift constantly pushes out songs extremely loved by international fans. On the US Billboard Hot 100, as of July 2023, Swift is the female musician with the most charted songs, most top-40 songs, most top-20 songs, most top-10 songs, and most number-one debuts. (Information from: https://en.wikipedia.org/wiki/Taylor_Swift_singles_discography#:~:text=On%20the%20US%20Billboard%20Hot,%2Done%20debuts%20(5).)
+   c. Taylor Swift has been an extremely important and well-loved singer for a long time. Her single "Tim McGraw" of her first album was her first Hot 100-charting song, which debuted all the way back in Sept. 23, 2006. (Information from: https://www.billboard.com/artist/taylor-swift/)
+   
+3. I will use columns A-D, H-R of the dataset to answer the question, 'Why are Taylor Swift's songs so popular?'. They are data about the name, album,	release_date,	track_number, acousticness,	danceability,	energy,	instrumentalness,	liveness,	loudness,	speechiness,	tempo	valence	popularity, and	duration_ms.
+
+   The challenges I faced was mainly thinking about how I can use the dataset to answer why Taylor Swift's songs are    so popular, as this seemed like a question that could be answered by qualitative data instead of quantitive data.    However, after consulting the TAs, I decided that I would analyse her songs that have a popularity rating of 80     and above based on column Q, 63 songs in total.
+   
+   
+WEEK 11:
+
+1) List the visualizations that you are going to use in your project (Answer: What are the variables that you are going to plot? How will it answer your larger question?)
+
+Flow of my story/ variables I am plotting:
+- a dot chart to show taylor swift's popularity in the music industry in general compared to other artists in 2023
+- annonated line chart (indicate major events as reasoning for the spikes/ downfall) of taylor swift's fan base (swifties) over the years, since she started singing
+- a scatter plot to show popularity rating of all her songs 
+- a bar graph of her popularity rating of 80 and above songs based on column Q, 63 songs in total
+- a box plot for acousticness,	danceability, instrumentalness and valence for her 63 most popular songs
+- I will add in my personal annotations and research results on why her songs are so popular and how they are reflected by the above graphs and trends.
+- All of the above will help to answer my question: 'Why are Taylor Swift's songs so popular?' as she is so successful due to her fans caring about her outside of her music, as a person in general. Her fans love her lyricsm, the way she sings and brings across simple and profound messages and the causes she advocates for in general. It will be important to analyse her songs as a whole and her personality in order to get a full understanding of why her songs are so popular.
+
+(2) How do you plan to make it interactive? (Answer: features of ggplot2/shiny/markdown do you plan to use to make the story interactive)
+I plan to use:
+- gganimate to animate some of my graphs and images of Taylor Swift
+- tooltips to display additional information when hovering over names of her songs
+- interactive widgets like checkboxes to allow users to manipulate the data being shown 
+- hyperlinks to allow users to see external references that I used/referred to in my storytelling
+I will add more if I think of more ways to make it more interactive in the future
+
+(3) What concepts incorporated in your project were taught in the course and which ones were self-learnt? (Answer: Create a table with topics in one column and Weeks in the other to indicate which concept taught in which week is being used. Leave the entry of the Week column empty for self-learnt concepts)
+
+```{r}
+topics <- c("Disecting Datasets & Data Visualisation & Using Shiny", "Passing Datasets through a pipe operator", "Tidy Data & Selecting Multiple Columns & Arranging Columns", "Ggplot & Designing Ggplot Graphs", "Shiny User Interface")
+weeks <- c(2, 3, 4, 7, 8)
+```
+
+```{r}
+learning_schedule <- data.frame(Topic = topics, Week = weeks)
+
+```
+
+```{r}
+print(learning_schedule)
+```
+
