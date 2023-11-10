@@ -1,9 +1,10 @@
 ---
-title: "WEEK 11 SUBMISSIONS"
+title: "WEEK 12 SUBMISSION"
 author: "alicia tan"
-date: "2023-10-30"
+date: "2023-11-07"
 output: html_document
 ---
+
 WEEK 9:
 1. Topic: The popularity of different Taylor Swift songs.
 
@@ -12,6 +13,7 @@ WEEK 9:
 
 
 WEEK 10:
+
 1. Why are Taylor Swift's songs so popular?
 
 2. This is an important question as:
@@ -28,7 +30,7 @@ WEEK 11:
 
 1) List the visualizations that you are going to use in your project (Answer: What are the variables that you are going to plot? How will it answer your larger question?)
 
-Flow of my story:
+Flow of my story/ variables I am plotting:
 - a dot chart to show taylor swift's popularity in the music industry in general compared to other artists in 2023
 - annonated line chart (indicate major events as reasoning for the spikes/ downfall) of taylor swift's fan base (swifties) over the years, since she started singing
 - a scatter plot to show popularity rating of all her songs 
@@ -37,5 +39,30 @@ Flow of my story:
 - I will add in my personal annotations and research results on why her songs are so popular and how they are reflected by the above graphs and trends.
 - All of the above will help to answer my question: 'Why are Taylor Swift's songs so popular?' as she is so successful due to her fans caring about her outside of her music, as a person in general. Her fans love her lyricsm, the way she sings and brings across simple and profound messages and the causes she advocates for in general. It will be important to analyse her songs as a whole and her personality in order to get a full understanding of why her songs are so popular.
 
-(2) How do you plan to make it interactive? (Answer: features of ggplot2/shiny/markdown do you plan to use to make the story interactive) ,
+(2) How do you plan to make it interactive? (Answer: features of ggplot2/shiny/markdown do you plan to use to make the story interactive)
+I plan to use:
+- gganimate to animate some of my graphs and images of Taylor Swift
+- tooltips to display additional information when hovering over names of her songs
+- interactive widgets like checkboxes to allow users to manipulate the data being shown 
+- hyperlinks to allow users to see external references that I used/referred to in my storytelling
+I will add more if I think of more ways to make it more interactive in the future
+
 (3) What concepts incorporated in your project were taught in the course and which ones were self-learnt? (Answer: Create a table with topics in one column and Weeks in the other to indicate which concept taught in which week is being used. Leave the entry of the Week column empty for self-learnt concepts)
+
+```{r}
+topics <- c("Disecting Datasets & Data Visualisation & Using Shiny", "Passing Datasets through a pipe operator", "Tidy Data & Selecting Multiple Columns & Arranging Columns", "Ggplot & Designing Ggplot Graphs", "Shiny User Interface")
+weeks <- c(2, 3, 4, 7, 8)
+```
+
+```{r}
+learning_schedule <- data.frame(Topic = topics, Week = weeks)
+
+```
+
+```{r}
+print(learning_schedule)
+```
+
+WEEK 12:
+Challenges and errors:
+I think my main challenge is trying to modify the code to fit what I am trying to code. Also as I am not very well versed with coding, I had problems guess and checking the codes I referenced online to make it work for my website. I also faced many issues with debugging and syntax errors, where I had to look to googling and asking my friends to help me solve and figure out the problems. 
