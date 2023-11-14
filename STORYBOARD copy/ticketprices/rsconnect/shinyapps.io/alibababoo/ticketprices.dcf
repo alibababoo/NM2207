@@ -1,0 +1,12 @@
+name: ticketprices
+title: ticketprices
+username: alibababoo
+account: alibababoo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10520687
+bundleId: 7926952
+url: https://alibababoo.shinyapps.io/ticketprices/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
