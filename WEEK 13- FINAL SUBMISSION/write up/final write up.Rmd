@@ -1,0 +1,42 @@
+---
+title: "final write up"
+author: "alicia tan"
+date: "2023-11-14"
+output: html_document
+---
+
+My data story seeks to investigate the reasons for the immense popularity of Taylor Swift's songs. I think this is an important question to address as it is an extremely relevant topic, with Taylor Swift currently still touring worldwide. There are many reasons as to why it is important to analyse her tremendous success but I will only be sharing three of my most compelling reasons due to word limit constraints. 
+
+Firstly, Taylor Swift is one of the most popular contemporary singers today. In 2019, she has already made history as the most-awarded artist of all time at American Music Awards, beating Michael Jackson's record of 24 all-time wins (Huff, 2019). On the US Billboard Hot 100, as of July 2023, Taylor is the female musician with most charted songs, most top-40 songs, most top-20 songs, most top-10 songs, and most number-one debuts (Zellner, 2023). She also has a whopping 12 grammy awards (Recording Academy, 2023) under her name at just 33 years old, where grammy awards are widely regarded as the most prestigious award in the music industry internationally. 
+
+Secondly, Taylor Swift has been an extremely well-loved singer for a long time. Her single "Tim McGraw" of her first album was her first Hot 100-charting song, which debuted back in September 23, 2006 (Billboard Media, 2023). Taylor Swift has consistently released songs that are become timeless and popular, since her debut album 'Taylor Swift' in 2006. She has been impacting her fans worldwide with her songs since they were young and millions of them have grown up with her songs, hence establishing a very loyal and huge fanbase. 
+
+Thirdly, Taylor Swift's current Eras Tour is record-breaking as it is on track to earn her a whopping $4.1 billion, making it the highest-grossing solo tour in history (The Economic Times, 2023). This amount of revenue from an artist's concert is unprecedented and hence is exciting to look into, to discover the unique selling point of Taylor Swift that sets her aside from other singers today.
+
+I only curated one data source as I thought that it was comprehensive enough. It shows data from all these categories: song name, album, release date, acousticness, danceability, energy, liveness, speechiness, tempo, valence, popularity and duration of song in minutes. To begin understanding why Taylor Swift is so popular, we need to look into the characteristics of her songs. There are certain attributes which make a song popular in today’s context, and artists who follow the template are more likely to produce popular songs. I consider songs in the Billboard Top 100 songs to be popular.  
+
+Firstly, I used a bar chart to showcase that Taylor’s concert tickets are on average the most expensive in 2023, more than double that of the second most expensive tickets which are for Morgan Wallen’s concerts. This extremely hefty average concert ticket price tag does not come from Taylor Swift selling her tickets at astronomical prices, but due to the high demand and lack of supply of concert tickets. Hence, many people look into the resale market to buy her tickets, which are sold at staggering prices, due to demand-supply market forces. The fact that so many of her fans, swifties, are willing to pay sky-high prices to see Taylor, goes to prove the immense power and popularity of Taylor Swift who has captivated the hearts of her fans.
+
+Secondly, I used an interactive checkbox table to showcase all the different categories of the dataset. Users can freely toggle between and show the different categories they wish to see, while hiding the other categories that are redundant. This allows users to compare different combinations of the categories at once easily.
+
+Thirdly, I used a scatter plot to showcase the individual popularity rating of Taylor's top songs, all of which have popularity ratings of 80 and above. There are 63 songs in total in the dataset that fit the requirements. I also drew up a table to show the albums and respective number of songs in the album that have popularity ratings of 80 and above. The scatter plot and table show that the album with the most songs in the top 63 is ‘Reputation’, while the albums with the least songs in the top 63 is ‘Red (Taylor’s Version)’ and ‘evermore’. I used this data to explicate and deduce the reasons in which the Reputation album was so well-loved by swifties. I delved deeper into the reasons on my webpage but the gist of it is that this was the first album Taylor released after lots of controversy about her after her 1989 album release in 2014. Additionally, I used the scatter plot to point out an anomaly of her song ‘Cruel Summer’, which has a popularity rating of 98, where the next most popular song has a rating of 92. 
+
+Fourthly, I used boxplots to analyse the different attributes of Taylor Swift's popular songs. I created boxplots for acousticness', 'danceability', 'energy', 'liveness', 'tempo' and 'valence'. I wanted to determine if Taylor’s songs were so popular because they strictly followed the template which popular pop songs usually follow or if swifties tend to love her songs regardless of the songs’ similarities to popular songs. To analyse her music, I followed the metrics concluded by an article after analyzing data from the Billboard Hot 100 Chart of hit songs (Viner, 2020). The article pointed out that popular songs tend to have: High danceability and energy, low acousticness and a tempo around 117 BPM. After comparing Taylor’s songs to the metrics that are used in the article, I concluded that while Taylor’s songs do have attributes that are congruent to popular songs today, she is extremely successful and hence many of her of songs are already in the Billboard Top 100 songs. It is like analysing Taylor's songs and concluding that the data shows that popular songs have similar attributes to Taylor's songs. Her songs were most likely sampled by the article before coming to those conclusions. While Taylor produces many songs that share similarities with other popular songs from different artists, what sets her apart is that she also has many outlier songs (pink dots on the box plot) that perform extremely well. These outliers are indicators that Taylor transcends the need to create songs that follow rigid templates to be successful, she has been and is successful in producing songs that lie outside of the perimeters of what is considered to make a song popular.
+
+Overall, the insights from all data supported and proved that Taylor Swift is certainly a juggernaut pop star of the 21st century, breaking many records in the music industry and even being dubbed ‘The Music Industry’ by the public.
+
+I implemented this entire project by googling tips about ways to use R studio and engaging the help of my friends who code and TAs during lecture time. I also googled many articles and statistics about Taylor, allowing me to uncover many new facts about her. 
+
+References:
+Billboard. (2023). Taylor Swift | Biography, Music & News. Billboard. https://www.billboard.com/artist/taylor-swift/
+
+The Economic Times. (2023, October 14). Taylor Swift's 'Eras Tour' set to make $4.1 billion earnings. The Economic Times. https://economictimes.indiatimes.com/news/international/us/taylor-swifts-eras-tour-set-to-make-4-1-billion-earnings/articleshow/104428617.cms
+
+Huff, L. (2019, November 24). Taylor Swift makes AMAs history, beats Michael Jackson for most awards. Entertainment Weekly. https://ew.com/awards/2019/11/24/taylor-swift-beats-michael-jackson-american-music-awards-history/
+
+Recording Academy. (2023). Taylor Swift | Artist. GRAMMY.com. https://www.grammy.com/artists/taylor-swift/15450
+
+Viner, J. (2020, December 22). What Makes a Hit Song: Analyzing Data from the Billboard Hot 100 Chart. Josh Viner. https://joshdviner.medium.com/what-makes-a-hit-song-analyzing-data-from-the-billboard-hot-100-chart-74c1d5ad3fa3
+
+Zellner, X. (2023, November 7). Here Are All the Hot 100. Billboard. https://www.billboard.com/lists/taylor-swift-hot-100-billboard-200-chart-records-broken/
+  
